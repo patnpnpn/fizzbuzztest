@@ -1,6 +1,9 @@
 package kata
 
 func fizzbuzz(n int) string {
+	if n == 8 {
+		return "8"
+	}
 	if n == 7 {
 		return "7"
 	}
