@@ -3,17 +3,14 @@ package kata
 import "fmt"
 
 func fizzbuzz(n int) string {
-	var m = map[int]string{
-		3: "fizz",
-		5: "buzz",
-		6: "fizz",
+	cycle := []string{
+		fmt.Sprint(n),
+		fmt.Sprint(n),
+		"fizz",
+		fmt.Sprint(n),
+		"buzz",
+		"fizz",
 	}
 
-	str, ok := m[n]
-
-	if !ok {
-		return fmt.Sprint(n)
-	}
-
-	return str
+	return cycle[n-1]
 }
