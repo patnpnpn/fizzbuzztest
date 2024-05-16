@@ -3,5 +3,9 @@ package kata
 import "fmt"
 
 func fizzbuzz(n int) string {
-    return fmt.Sprint(n)
+    if n == 3 {
+		return "fizz"
+	}
+ 
+	return fmt.Sprint(n)
 }
