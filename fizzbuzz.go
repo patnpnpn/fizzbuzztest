@@ -17,5 +17,9 @@ func fizzbuzz(n int) string {
 		values[i] = "buzz"
 	}
 
+	for i := 15 - 1; i < n; i += 15 {
+		values[i] = "fizzbuzz"
+	}
+
 	return values[n-1]
 }
