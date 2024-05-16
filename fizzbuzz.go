@@ -1,9 +1,7 @@
 package kata
 
+import "fmt"
+
 func fizzbuzz(n int) string {
-    if n == 2 {
-        return "2"
-    }
-    
-    return "1"
+    return fmt.Sprint(n)
 }
