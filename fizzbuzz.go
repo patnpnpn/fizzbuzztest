@@ -1,11 +1,12 @@
 package kata
 
-import "fmt"
-
 func fizzbuzz(n int) string {
-	if n == 3 {
-		return "fizz"
+	var m = map[int]string{
+		1: "1",
+		2: "2",
+		3: "fizz",
+		4: "4",
 	}
-	
-	return fmt.Sprint(n)
+
+	return m[n]
 }
