@@ -14,6 +14,10 @@ func isEqualToFive(n int) bool {
 	return n == 5
 }
 
+func isEqualToSix(n int) bool {
+	return n == 6
+}
+
 func fizzbuzz(n int) string {
 	if isEqualToThree(n) {
 		return "fizz"
@@ -21,6 +25,10 @@ func fizzbuzz(n int) string {
 
 	if isEqualToFive(n) {
 		return "buzz"
+	}
+
+	if isEqualToSix(n) {
+		return "fizz"
 	}
 
 	return convertIntToString(n)
