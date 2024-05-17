@@ -1,5 +1,7 @@
 package kata
 
+import "fmt"
+
 type Fizzbuzzer interface {
 	Fizzbuzzing() string
 }
@@ -13,10 +15,7 @@ func NewFizzBuzz(n int) Fizzbuzzer {
 }
 
 func (fb Fizzbuzz) Fizzbuzzing() string {
-	if fb.n == 2 {
-		return "2"
-	}
-	return "1"
+	return fmt.Sprint(fb.n)
 }
 
 func fizzbuzz(n int) string {
