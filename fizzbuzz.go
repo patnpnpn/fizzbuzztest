@@ -14,7 +14,15 @@ func isDivisibleByFive(n int) bool {
 	return n%5 == 0
 }
 
+func isDivisibleByFifteen(n int) bool {
+	return n%15 == 0
+}
+
 func fizzbuzz(n int) string {
+	if isDivisibleByFifteen(n) {
+		return "fizzbuzz"
+	}
+
 	if isDivisibleByThree(n) {
 		return "fizz"
 	}
