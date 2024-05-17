@@ -15,6 +15,10 @@ func NewFizzBuzz(n int) Fizzbuzzer {
 }
 
 func (fb Fizzbuzz) Fizzbuzzing() string {
+	if fb.n == 5 {
+		return "buzz"
+	}
+
 	if fb.n == 3 {
 		return "fizz"
 	}
