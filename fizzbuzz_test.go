@@ -92,24 +92,36 @@ func TestFizzBuzz(t *testing.T) {
 	})
 
 	t.Run("should return fizz when input 9", func(t *testing.T) {
-        input := 9
-        want := "fizz"
+		input := 9
+		want := "fizz"
 
-        get := fizzbuzz(input)
+		get := fizzbuzz(input)
 
-        if get != want {
-            t.Errorf("should return %s when input %s", want, get)
-        }
-    })
+		if get != want {
+			t.Errorf("should return %s when input %s", want, get)
+		}
+	})
 
 	t.Run("should return buzz when input 10", func(t *testing.T) {
-        input := 10
-        want := "buzz"
+		input := 10
+		want := "buzz"
 
-        get := fizzbuzz(input)
+		get := fizzbuzz(input)
 
-        if get != want {
-            t.Errorf("should return %s when input %s", want, get)
-        }
-    })
+		if get != want {
+			t.Errorf("should return %s when input %s", want, get)
+		}
+	})
+
+	t.Run("should return 11 when input 11", func(t *testing.T) {
+		input := 11
+		want := "11"
+
+		get := fizzbuzz(input)
+
+		if get != want {
+			t.Errorf("should return %s when input %s", want, get)
+		}
+	})
+
 }
