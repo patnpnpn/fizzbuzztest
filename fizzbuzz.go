@@ -10,12 +10,8 @@ func isDivisibleByThree(n int) bool {
 	return n%3 == 0
 }
 
-func isEqualToFive(n int) bool {
-	return n == 5
-}
-
-func isEqualToTen(n int) bool {
-	return n == 10
+func isDivisibleByFive(n int) bool {
+	return n%5 == 0
 }
 
 func fizzbuzz(n int) string {
@@ -23,11 +19,7 @@ func fizzbuzz(n int) string {
 		return "fizz"
 	}
 
-	if isEqualToFive(n) {
-		return "buzz"
-	}
-
-	if isEqualToTen(n) {
+	if isDivisibleByFive(n) {
 		return "buzz"
 	}
 
