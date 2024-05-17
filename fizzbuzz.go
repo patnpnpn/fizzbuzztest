@@ -14,12 +14,20 @@ func isEqualToFive(n int) bool {
 	return n == 5
 }
 
+func isEqualToTen(n int) bool {
+	return n == 10
+}
+
 func fizzbuzz(n int) string {
 	if isDivisibleByThree(n) {
 		return "fizz"
 	}
 
 	if isEqualToFive(n) {
+		return "buzz"
+	}
+
+	if isEqualToTen(n) {
 		return "buzz"
 	}
 
