@@ -14,5 +14,6 @@ func fizzbuzz(n int) string {
 	if isEqualToThree(n) {
 		return "fizz"
 	}
+	
 	return convertIntToString(n)
 }
